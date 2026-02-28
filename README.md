@@ -11,8 +11,8 @@ This repo aggregates multiple independent projects:
 - 🏦 **anchor_vault** – Token vault for deposits and withdrawals
 - 🔐 **anchor_escrow** – Secure token escrow program
 - 🎲 **Dice** – On-chain random number-based gaming logic
-- 💰 **quadratic_funding** – Implementation of quadratic funding on Solana
-- 🥩 **staking** – Token staking reward program
+- 📉 **quadratic_funding** – Implementation of quadratic funding on Solana
+- 💰 **staking** – Token staking reward program
 - 🔄 **amm** – Automated Market Maker implementation
 - 🐉 **anchor_mplxcore** – NFT minting using Metaplex Core
 - 🗳️ **dao_voting** – DAO-style proposal and voting system
