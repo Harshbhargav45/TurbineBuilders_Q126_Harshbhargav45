@@ -1,0 +1,27 @@
+[submodule "solana_starter"]
+	path = solana_starter
+	url = https://github.com/Harshbhargav45/solana_starter
+[submodule "anchor_vault"]
+	path = anchor_vault
+	url = https://github.com/Harshbhargav45/anchor_vault
+[submodule "anchor_escrow"]
+	path = anchor_escrow
+	url = https://github.com/Harshbhargav45/anchor_escrow
+[submodule "Dice"]
+	path = Dice
+	url = https://github.com/Harshbhargav45/Dice
+[submodule "quadratic_funding"]
+	path = quadratic_funding
+	url = https://github.com/Harshbhargav45/quadratic_funding
+[submodule "staking"]
+	path = staking
+	url = https://github.com/Harshbhargav45/staking
+[submodule "amm"]
+	path = amm
+	url = https://github.com/Harshbhargav45/amm
+[submodule "anchor_mplxcore"]
+	path = anchor_mplxcore
+	url = https://github.com/Harshbhargav45/anchor_mplxcore
+[submodule "dao_voting"]
+	path = dao_voting
+	url = https://github.com/Harshbhargav45/dao_voting
