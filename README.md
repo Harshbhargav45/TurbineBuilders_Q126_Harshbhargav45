@@ -1,7 +1,7 @@
-# 🚀 TurbinePB_Q126
+# 🚀 TurbinePB_Q126 — Harsh Bhargava
 
 A **monorepo-style learning repository** containing multiple **Solana + Rust + Anchor projects**, managed using **Git submodules**.  
-Built as part of the **Turbine Builder Program (PB)** to practice on-chain development from fundamentals.
+Building upon the foundations of Q425, this collection focuses on advanced protocols, DeFi mechanisms, and full-stack dApp architectures.
 
 ## 📦 Repository Structure
 
@@ -17,60 +17,66 @@ This repo aggregates multiple independent projects:
 - 🐉 **anchor_mplxcore** – NFT minting using Metaplex Core
 - 🗳️ **dao_voting** – DAO-style proposal and voting system
 
-## ⚓ Anchor Projects & Deep Dives
+---
 
-### 🏦 anchor_vault
-Implemented a secure token vault system where users can deposit and withdraw tokens. This project covers:
-- Secure asset custody using **Program Derived Addresses (PDAs)**.
-- Instruction logic for `deposit` and `withdraw` operations.
-- Professional Rent management and account closure logic.
+## 🏆 Featured Full-Stack Application
 
-### 🔐 anchor_escrow
-A secure token swap mechanism that facilitates peer-to-peer exchanges without trust. Highlights include:
-- **Atomic Swaps**: "Make" instruction to initialize escrow and "Take" for execution.
-- **Vault Protection**: Integrated SPL token vault for secure intermediation.
-- **Refund Logic**: Automatic mechanisms to reclaim funds if a swap is aborted.
+### 🗳️ DAO Voting Platform (`dao_voting`)
+A sophisticated governance system that allows communities to manage their treasury and make collective decisions transparently.
+- **Frontend App**: Built with **Next.js**, featuring a clean dashboard for proposing and voting.
+- **On-Chain Governance**: Supports token-weighted voting and automated winner selection.
+- **Treasury Logic**: Integrated mechanisms for users to purchase governance tokens using SOL.
+- **Transparent Lifecycle**: Immutable records for every proposal, from registration to resolution.
 
-### 🗳️ dao_voting
-A sophisticated, decentralized governance system featuring:
-- **Treasury Management**: Admin-controlled SOL/token balances and configuration.
-- **Proposal Lifecycle**: End-to-end flow to Create, Vote, and Resolve on-chain proposals.
-- **Token-Weighted Voting**: Ensuring community influence is proportional to governance stake.
+---
 
-### 💰 staking
-A DeFi reward system allowing users to earn yield by locking their assets:
-- **Incentive Logic**: Automated reward accrual based on staking duration.
-- **Stake/Unstake**: User-friendly flow for asset commitment and redemption.
+## 🔱 Advanced Protocols (Q1 2026 Specials)
 
-### 🎲 Dice
-A fair gaming program utilizing Solana's speed and security:
-- **On-chain Resolution**: Processing bets and payouts based on random-based logic.
-- **House Management**: Integrated treasury for handling payouts and platform fees.
-
-### 🔄 amm
-An Automated Market Maker (AMM) implementation based on the **Constant Product (x*y=k)** formula:
-- **Pool Management**: Instructions for adding and removing liquidity.
-- **Decentralized Swaps**: Real-time on-chain price discovery and token swaps.
-
-### 📈 quadratic_funding
-A democratic funding mechanism that amplifies small contributors:
+### 📈 Quadratic Funding (`quadratic_funding`)
+A democratic funding mechanism that amplifies small contributors to support public goods.
 - **QF Algorithm**: Rust implementation of the mathematical formula for fair fund distribution.
-- **Community Projects**: Tracking project registrations and donation pools.
+- **Pool Management**: Real-time tracking of project registrations and donation pools.
 
-## 🧠 Purpose
-- Learn Solana account model & PDAs  
-- Practice Anchor framework & Rust  
-- Build real on-chain programs step by step  
-- Understand NFTs, escrow, vaults, and marketplaces  
+### 🔄 AMM: Automated Market Maker (`amm`)
+A decentralized exchange protocol based on the **Constant Product (x*y=k)** formula.
+- **Liquidity Pools**: Instructions for adding/removing liquidity and maintaining pool balance.
+- **Price Discovery**: Real-time on-chain swaps with Slippage and Fee management.
+
+### 💰 Staking Protocol (`staking`)
+A DeFi incentive system designed to reward long-term asset commitment.
+- **Yield Accrual**: Automated reward calculation based on duration and stake weight.
+- **User Flow**: Simplified instructions for staking, unstaking, and claiming rewards.
+
+---
+
+## ⚓ Anchor Foundational Projects
+
+### 🔐 Token Escrow (`anchor_escrow`)
+A zero-trust swap mechanism facilitating atomic peer-to-peer exchanges.
+- **Atomic Execution**: Ensuring both sides of the trade occur simultaneously or not at all.
+- **Secure Vaults**: Using PDAs to hold assets in transit during the "Make" and "Take" phases.
+
+### 🏦 Asset Vault (`anchor_vault`)
+A secure custody system for SPL tokens and SOL.
+- **PDA Security**: Every vault is a Program Derived Address, ensuring only specific instructions can sign for transfers.
+- **Rent Reclamation**: Efficient logic for closing accounts and recovering SOL.
+
+### 🎲 Dice Gaming (`Dice`)
+A fair gaming program utilizing Solana's high-speed transaction capabilities.
+- **Randomness Logic**: Processing bets and payouts based on secure on-chain resolution.
+
+---
 
 ## 🛠 Tech Stack
-- **Solana** (Devnet)  
-- **Anchor** (Rust)  
-- **SPL Token** & **Metaplex Core**  
-- **Surfpool** (Runbooks, Surfnet, and Local Testing)
-- **Web3.js** & **Next.js**
+- **Languages**: Rust, TypeScript
+- **Frameworks**: Anchor, Next.js, React
+- **Solana Ecosystem**: SPL Token, Metaplex Core (MPLX Core)
+- **Tooling**: [Surfpool](https://surfpool.run) (Runbooks, Surfnet, and Local Testing), Solana CLI
 
-## 📌 Notes
-- Each folder is a **Git submodule**  
-- Projects are **independent** and focused on learning  
-- Deployed and tested mainly on **Devnet**
+## 🧠 Learning Goals
+- Mastering **Program Derived Addresses (PDAs)** for state management.
+- Implementing **Cross-Program Invocations (CPI)** for complex DeFi flows.
+- Building **Full-Stack dApps** with seamless wallet integration and real-time on-chain data.
+- Exploring advanced math implementations in Rust for decentralized finance.
+
+---
